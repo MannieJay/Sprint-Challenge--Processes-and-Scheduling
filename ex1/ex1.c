@@ -14,4 +14,12 @@ void alloc_1d_example(void)
   *(array + 8) = 3490;
 
   printf("array[8] = %d\n", my_array[8]);
+
+  free(array);
+}
+
+int main(void)
+{
+  alloc_id_example();
+  return 0;
 }
